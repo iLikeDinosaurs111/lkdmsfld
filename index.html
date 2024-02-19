@@ -1,0 +1,135 @@
+<html><head>
+    <title>CSS Display Property Example</title>
+    <style>
+      p {
+        color: white;
+      }
+  
+      .block {
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin-bottom: 10px;
+      }
+  
+      .inline {
+        display: inline;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        margin-right: 10px;
+      }
+  
+      .inline-block {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        margin-right: 10px;
+      }
+  
+      .input-group {
+        margin-top: 10px;
+      }
+  
+      .slider-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+  
+      .slider-label {
+        margin-right: 10px;
+      }
+  
+      .slider {
+        flex: 1;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 5px;
+        background-color: #ddd;
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #666;
+        cursor: pointer;
+      }
+  
+      .slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        background-color: #666;
+        cursor: pointer;
+      }
+  
+      .red {
+        background-color: red;
+      }
+  
+      .green {
+        background-color: green;
+      }
+  
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  
+  <body data-new-gr-c-s-check-loaded="14.1155.0" data-gr-ext-installed="">
+    <h1>CSS Display Property</h1>
+    <p class="block" style="height: 100px; width: 580px;">Block Paragraph </p>
+    <p class="inline" style="height: 197px;">Inline Paragraph
+    </p>
+    <p class="inline-block bluebox" id="bluebox" style="height: 100px; width: 457px;">Inline-Block Paragraph</p>
+  
+    <div class="input-group">
+      <div class="slider-group">
+        <label class="slider-label" for="block-height-slider">Block Height:</label>
+        <input type="range" id="block-height-slider" min="100" max="2000" value="200" class="slider red">
+        <output id="block-height-output">100</output>
+      </div>
+      <div class="slider-group">
+        <label class="slider-label" for="block-width-slider">Block Width:</label>
+        <input type="range" id="block-width-slider" min="100" max="2000" value="200" class="slider red">
+        <output id="block-width-output">580</output>
+      </div>
+    </div>
+  
+    <div class="input-group">
+      <div class="slider-group">
+        <label class="slider-label" for="inline-height-slider">Inline Height:</label>
+        <input type="range" id="inline-height-slider" min="100" max="2000" value="200" class="slider green">
+        <output id="inline-height-output">197</output>
+      </div>
+      <div class="slider-group">
+        <label class="slider-label" for="inline-width-slider">Inline Width:</label>
+        <input type="range" id="inline-width-slider" min="100" max="2000" value="200" class="slider green">
+        <output id="inline-width-output">100</output>
+      </div>
+    </div>
+  
+    <div class="input-group">
+      <div class="slider-group">
+        <label class="slider-label" for="inline-block-height-slider">Inline-Block Height:</label>
+        <input type="range" id="inline-block-height-slider" min="100" max="2000" value="200" class="slider blue">
+        <output id="inline-block-height-output">100</output>
+      </div>
+      <div class="slider-group">
+        <label class="slider-label" for="inline-block-width-slider">Inline-Block Width:</label>
+        <input type="range" id="inline-block-width-slider" min="100" max="2000" value="200" class="slider blue">
+        <output id="inline-block-width-output">457</output>
+      </div>
+    </div>
+  
+  <script src="thing.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <div class="canvas-container" id="pageMarker_canvas" style="width: 1081px; height: 548px; position: relative; user-select: none; cursor: crosshair; pointer-events: none;"><canvas class="lower-canvas" width="1891.75" height="959" style="position: absolute; width: 1081px; height: 548px; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas><canvas class="upper-canvas " width="1891.75" height="959" style="position: absolute; width: 1081px; height: 548px; left: 0px; top: 0px; touch-action: none; user-select: none; cursor: crosshair;"></canvas></div><div id="pageMarker_draggable" style="top: 0px;"><div id="pageMarker_color"><div class="pageMarker_title">Color</div><input id="pageMarker_colorSelect" type="color" value="#FF0000"></div><div id="pageMarker_tools"><div class="pageMarker_title pageMarker_toolsTitle">Tools</div><div class="pageMarker_toolDiv"><a id="pageMarker_pen" class="pageMarker_tool" style=""><img id="pageMarker_penImg" class="pageMarker_icon" alt="Marker" title="Marker" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/marker.png"></a><a id="pageMarker_highlighter" class="pageMarker_tool"><img id="pageMarker_highlighterImg" class="pageMarker_icon" alt="Highlighter" title="Highlighter" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/highlighter.png"></a><a id="pageMarker_eraser" class="pageMarker_tool"><img id="pageMarker_eraserImg" class="pageMarker_icon" alt="Eraser" title="Eraser" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/eraser.png"></a><a id="pageMarker_pointer" class="pageMarker_tool" style="background: rgba(0, 0, 0, 0.2);"><img id="pageMarker_pointerImg" class="pageMarker_icon" alt="Pointer" title="Pointer" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/pointer.png"></a><a id="pageMarker_text" class="pageMarker_tool"><img id="pageMarker_textImg" class="pageMarker_icon" alt="Text" title="Text" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/text.png"></a><a id="pageMarker_move" class="pageMarker_tool"><img id="pageMarker_moveImg" class="pageMarker_icon" alt="Move" title="Move" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/move.png"></a><a id="pageMarker_line" class="pageMarker_tool"><img id="pageMarker_lineImg" class="pageMarker_icon" alt="Line" title="Line" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/line.png"></a><a id="pageMarker_save" class="pageMarker_tool"><img id="pageMarker_saveImg" class="pageMarker_icon" alt="Save" title="Save Drawing" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/save.png"></a><a id="pageMarker_undo" class="pageMarker_tool" style="opacity: 1; cursor: pointer;"><img id="pageMarker_undoImg" class="pageMarker_icon" alt="Undo" title="Undo" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/undo.png"></a><a id="pageMarker_redo" class="pageMarker_tool" style="opacity: 0.3; cursor: not-allowed;"><img id="pageMarker_redoImg" class="pageMarker_icon" alt="Redo" title="Redo" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/redo.png"></a><a id="pageMarker_clear" class="pageMarker_tool"><img id="pageMarker_clearImg" class="pageMarker_icon" alt="Clear" title="Clear" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/clear.png"></a><a id="pageMarker_exit" class="pageMarker_tool"><img id="pageMarker_exitImg" class="pageMarker_icon" alt="Exit" title="Exit" src="chrome-extension://jfiihjeimjpkpoaekpdpllpaeichkiod/exit.png"></a></div></div><div id="pageMarker_size"><div class="pageMarker_title">Size</div><input type="range" id="pageMarker_thicknessSlider" value="5" max="60" min="1"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
